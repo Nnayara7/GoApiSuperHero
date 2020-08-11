@@ -1,0 +1,13 @@
+server:
+    host: 127.0.0.1
+    port: 3000
+database:
+    driver: postgres
+    username: postgres
+    password: 123456
+    host: localhost
+    port: 5432
+    dbname: postgres
+api:
+    endpoint: "https://superheroapi.com/api"
+    token: 3426078140759658
