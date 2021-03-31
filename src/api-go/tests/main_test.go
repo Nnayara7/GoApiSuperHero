@@ -73,7 +73,7 @@ func TestFindByName(t *testing.T) {
 	if len(consultSuper) > 0 {
 		fmt.Println("==========Que legal seu super foi encontrado =================")
 	} else {
-		fmt.Println("==========Não foi Possivel buscar esse super em banco local =================")
+		t.Error("==========Não foi Possivel buscar esse super em banco local =================")
 	}
 }
 
@@ -88,7 +88,7 @@ func TestSuperDeleteLocal(t *testing.T) {
 	if resposta {
 		fmt.Println("==========Super deletado  =================")
 	} else {
-			fmt.Println("==========Não foi Possivel deletar esse super=================")
+			t.Error("==========Não foi Possivel deletar esse super=================")
 		}
 }
 
@@ -103,7 +103,7 @@ func TestFoundAllVillanLocal(t *testing.T) {
 	if len(consultSuper) > 0 {
 		fmt.Println("==========Todos os vilões foram listados =================")
 	} else {
-		fmt.Println("==========Não foi possível realizar a busca =================")
+		t.Error("==========Não foi possível realizar a busca =================")
 	}
 }
 
@@ -118,6 +118,6 @@ func TestFoundAllSupersLocal(t *testing.T) {
 	if len(consultSuper) > 0 {
 		fmt.Println("==========Todos os Supers foram listados =================")
 	} else {
-		fmt.Println("==========Não foi possível realizar a busca =================")
+		t.Error("==========Não foi possível realizar a busca =================")
 	}
 }
